@@ -298,6 +298,51 @@ img {
   background: linear-gradient(160deg, #ffffff 0%, #f2f7ff 100%);
 }
 
+.staff {
+  background: var(--snow);
+}
+
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.staff-card {
+  background: var(--ice);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(19, 38, 58, 0.08);
+  box-shadow: 0 16px 40px rgba(19, 38, 58, 0.08);
+  display: grid;
+}
+
+.staff-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.staff-body {
+  padding: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.staff-internal {
+  padding: 22px;
+  display: grid;
+  gap: 12px;
+}
+
+.staff-internal ul {
+  list-style: none;
+  display: grid;
+  gap: 6px;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
 .course-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -343,6 +388,30 @@ img {
 
 .results {
   background: var(--snow);
+}
+
+.reviews {
+  background: linear-gradient(160deg, #ffffff 0%, #f9fbff 100%);
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.review-card {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 20px;
+  border: 1px solid rgba(19, 38, 58, 0.08);
+  display: grid;
+  gap: 10px;
+}
+
+.review-score {
+  color: var(--gold);
+  font-weight: 700;
 }
 
 .result-grid {
@@ -452,16 +521,12 @@ summary {
   border: 1px solid rgba(19, 38, 58, 0.08);
 }
 
-.map-placeholder {
-  background: #0f2544;
-  color: white;
+.access-map iframe {
+  width: 100%;
+  min-height: 260px;
+  border: 0;
   border-radius: var(--radius-md);
-  min-height: 220px;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  padding: 20px;
-  gap: 6px;
+  box-shadow: 0 16px 40px rgba(19, 38, 58, 0.12);
 }
 
 .contact {
