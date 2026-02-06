@@ -301,16 +301,6 @@ img {
   font-weight: 600;
 }
 
-.gallery {
-  background: var(--sky);
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-}
-
 .teacher {
   background: var(--cream);
 }
@@ -321,7 +311,21 @@ img {
   padding: 26px;
   box-shadow: var(--shadow);
   display: grid;
-  gap: 18px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.teacher-photo {
+  background: var(--peach);
+  border-radius: var(--radius-md);
+  padding: 12px;
+}
+
+.teacher-photo img {
+  width: 100%;
+  height: clamp(220px, 34vw, 320px);
+  object-fit: cover;
 }
 
 .teacher-points {
@@ -393,6 +397,20 @@ img {
   gap: 12px;
 }
 
+.line-cta {
+  margin-top: 24px;
+}
+
+.line-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 12px;
+  text-align: center;
+}
+
 .form-note {
   font-size: 12px;
   color: var(--ink-soft);
@@ -428,8 +446,8 @@ img {
     display: none;
   }
 
-  .hero-cards {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  .teacher-card {
+    grid-template-columns: 1fr;
   }
 }
 
