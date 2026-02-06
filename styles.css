@@ -201,16 +201,27 @@ img {
   border-radius: 50%;
 }
 
-.hero-cards {
-  display: grid;
-  gap: 16px;
-}
-
-.photo-card {
+.hero-photo {
   background: white;
-  padding: 12px;
+  padding: 14px;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
+  position: relative;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: clamp(260px, 36vw, 380px);
+  object-fit: cover;
+}
+
+.hero-caption {
+  margin-top: 12px;
+  background: var(--peach);
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  color: var(--ink-soft);
 }
 
 .section {
